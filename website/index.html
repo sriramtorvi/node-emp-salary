@@ -26,14 +26,23 @@
             <div class="input-group">
               <input id="searchSalary" type="number" placeholder="Salary" class="form-control">
               <select id="compareOption" class="form-control">
-                <option value="greater">Greater than</option>
+                <option value="greater" selected>Greater than</option>
                 <option value="less">Less than</option>
               </select>
               <button id="btnSearch" class="btn btn-primary" type="button">Search</button>
             </div>
-
-
-
+            <br>
+            <div>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                  </tr>
+                </thead>
+                <tbody id="emp-details"></tbody>
+              </table>
+            </div>
   			  </div>
   		  </div>
   	</div>

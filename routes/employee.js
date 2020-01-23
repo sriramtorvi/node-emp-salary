@@ -4,7 +4,7 @@ const mysql = require('../connection');
 
 Router.get('/greater/:sal',(req, res) => {
     let query = `select * from emp_details where salary > ${req.params.sal}`
-    console.log(query);
+  //  console.log(query);
     mysql.query(query, (err, rows) => {
         if(err) {
             res.status(500).json({
@@ -16,7 +16,7 @@ Router.get('/greater/:sal',(req, res) => {
                 employees: rows.map(row => {
                     return {
                         name: row.name,
-                        mail: row.email
+                        email: row.email
                     }
                 })
             }
@@ -28,7 +28,7 @@ Router.get('/greater/:sal',(req, res) => {
 
 Router.get('/less/:sal',(req, res) => {
     let query = `select * from emp_details where salary < ${req.params.sal}`
-    console.log(query);
+    //console.log(query);
     mysql.query(query, (err, rows) => {
         if(err) {
             res.status(500).json({
@@ -40,7 +40,7 @@ Router.get('/less/:sal',(req, res) => {
                 employees: rows.map(row => {
                     return {
                         name: row.name,
-                        mail: row.email
+                        email: row.email
                     }
                 })
             }
@@ -53,7 +53,7 @@ Router.post('/',(req,res) => {
     const name = req.body.name;
     const email = req.body.email;
     const salary = req.body.salary;
-
+    
     const query = `select * from emp_details where email = '${email}'`;
     mysql.query(query, (err, rows) => {
         if(err) {
