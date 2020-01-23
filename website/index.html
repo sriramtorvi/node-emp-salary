@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Salary</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  </head>
+  <body>
+  	<div class="container-fluid">
+  			<div class="col-md-8">
+  				<div class="jumbotron">
+            <div class="input-group">
+              <input id="inputEmail" type="email" placeholder="Email" class="form-control" required>
+              <input id="inputName" type="text" placeholder="Name" class="form-control" required>
+              <input id="inputSalary" type="number" placeholder="Salary" class="form-control" required>
+              <button id="btnSubmit" class="btn btn-primary" type="button">Submit</button>
+            </div>
+  			  </div>
+
+          <div class="jumbotron">
+            <div class="input-group">
+              <input id="searchSalary" type="number" placeholder="Salary" class="form-control">
+              <select id="compareOption" class="form-control">
+                <option value="greater">Greater than</option>
+                <option value="less">Less than</option>
+              </select>
+              <button id="btnSearch" class="btn btn-primary" type="button">Search</button>
+            </div>
+
+
+
+  			  </div>
+  		  </div>
+  	</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
